@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720D6C682418CD5900435338 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D6C672418CD5900435338 /* LoginViewController.swift */; };
+		720D6C6A2418DA7A00435338 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D6C692418DA7A00435338 /* UIColorExtension.swift */; };
+		720D6C6C2418E09A00435338 /* SaveProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D6C6B2418E09A00435338 /* SaveProfile.swift */; };
 		72627C8E24164F2900460B4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72627C8D24164F2900460B4C /* GoogleService-Info.plist */; };
 		72F18414241641660025F750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F18413241641660025F750 /* AppDelegate.swift */; };
 		72F18416241641660025F750 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F18415241641660025F750 /* SceneDelegate.swift */; };
-		72F18418241641660025F750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F18417241641660025F750 /* ViewController.swift */; };
 		72F1841B241641660025F750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F18419241641660025F750 /* Main.storyboard */; };
 		72F1841D241641680025F750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F1841C241641680025F750 /* Assets.xcassets */; };
 		72F18420241641680025F750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F1841E241641680025F750 /* LaunchScreen.storyboard */; };
@@ -20,11 +22,13 @@
 /* Begin PBXFileReference section */
 		2030ED912AE0BB07528EED83 /* Pods-MusicListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicListApp.debug.xcconfig"; path = "Target Support Files/Pods-MusicListApp/Pods-MusicListApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5522E7221AE3E59B5B55BB77 /* Pods-MusicListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicListApp.release.xcconfig"; path = "Target Support Files/Pods-MusicListApp/Pods-MusicListApp.release.xcconfig"; sourceTree = "<group>"; };
+		720D6C672418CD5900435338 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		720D6C692418DA7A00435338 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		720D6C6B2418E09A00435338 /* SaveProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveProfile.swift; sourceTree = "<group>"; };
 		72627C8D24164F2900460B4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		72F18410241641660025F750 /* MusicListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F18413241641660025F750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72F18415241641660025F750 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72F18417241641660025F750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72F1841A241641660025F750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72F1841C241641680025F750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72F1841F241641680025F750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +48,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720D6C642418CD0100435338 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				720D6C672418CD5900435338 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		720D6C652418CD1600435338 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				720D6C6B2418E09A00435338 /* SaveProfile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		720D6C662418CD1D00435338 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				720D6C692418DA7A00435338 /* UIColorExtension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		72F18407241641660025F750 = {
 			isa = PBXGroup;
 			children = (
@@ -65,9 +93,11 @@
 		72F18412241641660025F750 /* MusicListApp */ = {
 			isa = PBXGroup;
 			children = (
+				720D6C662418CD1D00435338 /* Util */,
+				720D6C652418CD1600435338 /* Model */,
+				720D6C642418CD0100435338 /* Controller */,
 				72F18413241641660025F750 /* AppDelegate.swift */,
 				72F18415241641660025F750 /* SceneDelegate.swift */,
-				72F18417241641660025F750 /* ViewController.swift */,
 				72F18419241641660025F750 /* Main.storyboard */,
 				72F1841C241641680025F750 /* Assets.xcassets */,
 				72F1841E241641680025F750 /* LaunchScreen.storyboard */,
@@ -210,9 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72F18418241641660025F750 /* ViewController.swift in Sources */,
+				720D6C682418CD5900435338 /* LoginViewController.swift in Sources */,
 				72F18414241641660025F750 /* AppDelegate.swift in Sources */,
 				72F18416241641660025F750 /* SceneDelegate.swift in Sources */,
+				720D6C6A2418DA7A00435338 /* UIColorExtension.swift in Sources */,
+				720D6C6C2418E09A00435338 /* SaveProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

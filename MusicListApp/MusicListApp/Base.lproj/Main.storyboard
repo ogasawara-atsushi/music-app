@@ -115,11 +115,45 @@
                         <outlet property="favButton" destination="QUL-dF-t6s" id="wai-KZ-TCU"/>
                         <outlet property="listButton" destination="Qv3-UP-1Gi" id="ZN8-S8-rnj"/>
                         <outlet property="searchTextField" destination="05H-We-u2q" id="AfA-co-jSq"/>
+                        <segue destination="bX0-jH-kN3" kind="presentation" identifier="selectVC" modalPresentationStyle="fullScreen" id="wU8-TQ-llO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haP-BL-bih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2239.130434782609" y="127.90178571428571"/>
+        </scene>
+        <!--Select View Controller-->
+        <scene sceneID="QHU-42-qHP">
+            <objects>
+                <viewController id="bX0-jH-kN3" customClass="SelectViewController" customModule="MusicListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9A1-kJ-kbS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJb-lb-gO4" customClass="VerticalCardSwiper" customModule="MusicListApp" customModuleProvider="target">
+                                <rect key="frame" x="-1" y="106" width="414" height="790"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHo-O9-4jj">
+                                <rect key="frame" x="14" y="33" width="69" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="iconfinder_Arrow_doodle_11_3847915"/>
+                                <connections>
+                                    <action selector="back:" destination="bX0-jH-kN3" eventType="touchUpInside" id="3wz-iJ-PMm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="E21-o6-eYI"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardSwiper" destination="qJb-lb-gO4" id="yku-FD-6Kn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gts-Wd-eUq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2230.434782608696" y="853.79464285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O01-Pn-Wf8">
@@ -141,6 +175,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="iconfinder_Arrow_doodle_11_3847915" width="128" height="128"/>
         <image name="loginImage" width="1281" height="1920"/>
         <image name="music" width="512" height="256"/>
         <image name="search" width="128" height="128"/>

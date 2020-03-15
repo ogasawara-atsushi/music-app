@@ -82,9 +82,19 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func moveToSelectCardView(_ sender: Any) {
-        
         //パースを行う
         startParse(keyword: searchTextField.text!)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if searchTextField.text != nil && segue.identifier == "selectVC" {
+            let selectVC = segue.destination as! SelectViewController
+            selectVC.artistNameArray = self.artistNameArray
+            selectVC.imageStringArray = self.imageStringArray
+            selectVC.musivNameArray = self.musicNameArray
+            selectVC.previewURLArray = self.previewURLArray
+            selectVC.userID = self.userID
+            selectVC.userName = self.userName
+        }
     }
     
     func moveToCard() {

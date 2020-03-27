@@ -11,7 +11,11 @@
 		720D6C6A2418DA7A00435338 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D6C692418DA7A00435338 /* UIColorExtension.swift */; };
 		720D6C6C2418E09A00435338 /* SaveProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D6C6B2418E09A00435338 /* SaveProfile.swift */; };
 		720D6C6E2419FF0500435338 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D6C6D2419FF0500435338 /* SearchViewController.swift */; };
+		721AA767241A88E60070B467 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AA766241A88E60070B467 /* SelectViewController.swift */; };
 		72627C8E24164F2900460B4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72627C8D24164F2900460B4C /* GoogleService-Info.plist */; };
+		728F85B1241B5FA900896413 /* CardViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728F85AF241B5FA900896413 /* CardViewCellTableViewCell.swift */; };
+		728F85B2241B5FA900896413 /* CardViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728F85B0241B5FA900896413 /* CardViewCellTableViewCell.xib */; };
+		728F85B4241B8FC000896413 /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728F85B3241B8FC000896413 /* MusicDataModel.swift */; };
 		72F18414241641660025F750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F18413241641660025F750 /* AppDelegate.swift */; };
 		72F18416241641660025F750 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F18415241641660025F750 /* SceneDelegate.swift */; };
 		72F1841B241641660025F750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F18419241641660025F750 /* Main.storyboard */; };
@@ -27,7 +31,11 @@
 		720D6C692418DA7A00435338 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		720D6C6B2418E09A00435338 /* SaveProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveProfile.swift; sourceTree = "<group>"; };
 		720D6C6D2419FF0500435338 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		721AA766241A88E60070B467 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		72627C8D24164F2900460B4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		728F85AF241B5FA900896413 /* CardViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		728F85B0241B5FA900896413 /* CardViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewCellTableViewCell.xib; sourceTree = "<group>"; };
+		728F85B3241B8FC000896413 /* MusicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
 		72F18410241641660025F750 /* MusicListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F18413241641660025F750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72F18415241641660025F750 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +63,7 @@
 			children = (
 				720D6C672418CD5900435338 /* LoginViewController.swift */,
 				720D6C6D2419FF0500435338 /* SearchViewController.swift */,
+				721AA766241A88E60070B467 /* SelectViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -63,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				720D6C6B2418E09A00435338 /* SaveProfile.swift */,
+				728F85B3241B8FC000896413 /* MusicDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -73,6 +83,15 @@
 				720D6C692418DA7A00435338 /* UIColorExtension.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		728F85AE241B5F7D00896413 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				728F85AF241B5FA900896413 /* CardViewCellTableViewCell.swift */,
+				728F85B0241B5FA900896413 /* CardViewCellTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		72F18407241641660025F750 = {
@@ -96,6 +115,7 @@
 		72F18412241641660025F750 /* MusicListApp */ = {
 			isa = PBXGroup;
 			children = (
+				728F85AE241B5F7D00896413 /* View */,
 				720D6C662418CD1D00435338 /* Util */,
 				720D6C652418CD1600435338 /* Model */,
 				720D6C642418CD0100435338 /* Controller */,
@@ -187,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728F85B2241B5FA900896413 /* CardViewCellTableViewCell.xib in Resources */,
 				72F18420241641680025F750 /* LaunchScreen.storyboard in Resources */,
 				72627C8E24164F2900460B4C /* GoogleService-Info.plist in Resources */,
 				72F1841D241641680025F750 /* Assets.xcassets in Resources */,
@@ -245,7 +266,10 @@
 			files = (
 				720D6C6E2419FF0500435338 /* SearchViewController.swift in Sources */,
 				720D6C682418CD5900435338 /* LoginViewController.swift in Sources */,
+				728F85B4241B8FC000896413 /* MusicDataModel.swift in Sources */,
+				728F85B1241B5FA900896413 /* CardViewCellTableViewCell.swift in Sources */,
 				72F18414241641660025F750 /* AppDelegate.swift in Sources */,
+				721AA767241A88E60070B467 /* SelectViewController.swift in Sources */,
 				72F18416241641660025F750 /* SceneDelegate.swift in Sources */,
 				720D6C6A2418DA7A00435338 /* UIColorExtension.swift in Sources */,
 				720D6C6C2418E09A00435338 /* SaveProfile.swift in Sources */,

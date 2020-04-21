@@ -30,7 +30,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 
-    @IBAction func login(_ sender: Any) {
+    @IBAction func loginButtonDidTapped(_ sender: Any) {
         //もしtextfieldの値が空でない場合、
         if textfield.text?.isEmpty != true {
             //textfieldの値（ユーザー名）を自分のアプリ名に保存しておく

@@ -18,21 +18,21 @@ class SelectViewController: UIViewController, VerticalCardSwiperDelegate, Vertic
     
     
     //受け取り用
-    var artistNameArray = [String]()
-    var musicNameArray = [String]()
-    var previewURLArray = [String]()
-    var imageStringArray = [String]()
+    var artistNames = [String]()
+    var musicNames = [String]()
+    var previewURLs = [String]()
+    var imageStrs = [String]()
     
     var indexNumber = Int()
     var userID = String()
     var userName = String()
     
     //右にスワイプしたときに好きなものを入れる配列
-    var likeArtistNameArray = [String]()
-    var likeMusivNameArray = [String]()
-    var likePreviewURLArray = [String]()
-    var likeImageStringArray = [String]()
-    var likeArtistViewUrlArray = [String]()
+    var likeArtistNames = [String]()
+    var likeMusivNames = [String]()
+    var likePreviewURLs = [String]()
+    var likeImageStrs = [String]()
+    var likeArtistViewUrlStrs = [String]()
     
     @IBOutlet weak var cardSwiper: VerticalCardSwiper!
     
@@ -48,7 +48,7 @@ class SelectViewController: UIViewController, VerticalCardSwiperDelegate, Vertic
     }
     
     func numberOfCards(verticalCardSwiperView: VerticalCardSwiperView) -> Int {
-        return artistNameArray.count
+        return artistNames.count
     }
     
     func cardForItemAt(verticalCardSwiperView: VerticalCardSwiperView, cardForItemAt index: Int) -> CardCell {
@@ -57,8 +57,8 @@ class SelectViewController: UIViewController, VerticalCardSwiperDelegate, Vertic
             view.backgroundColor = verticalCardSwiperView.backgroundColor
             
             //セル（カード）に配列を表示させる
-            let artistName = artistNameArray[index]
-            let musicName = musicNameArray[index]
+            let artistName = artistNames[index]
+            let musicName = musicNames[index]
             cardCell.setRandomBackgroundColor()
             cardCell.artistNameLabel.text = artistName
             cardCell.artistNameLabel.textColor = UIColor.white
@@ -81,14 +81,14 @@ class SelectViewController: UIViewController, VerticalCardSwiperDelegate, Vertic
         //右にスワイプしたときに呼ばれる箇所
         if swipeDirection == .Right {
             //右にスワイプした時に好きなものとして、新しい配列に入れてあげる
-            likeArtistNameArray.append(artistNameArray[indexNumber])
-            likeMusivNameArray.append(musicNameArray[indexNumber])
-            likePreviewURLArray.append(previewURLArray[indexNumber])
-            likePreviewURLArray.append(imageStringArray[indexNumber])
+            likeArtistNames.append(artistNames[indexNumber])
+            likeMusivNames.append(musicNames[indexNumber])
+            likePreviewURLs.append(previewURLs[indexNumber])
+            likePreviewURLs.append(imageStrs[indexNumber])
             
-            if likeArtistNameArray.count != 0 && likeMusivNameArray.count != 0 && likePreviewURLArray.count != 0 && likePreviewURLArray.count != 0 {
+            if likeArtistNames.count != 0 && likeMusivNames.count != 0 && likePreviewURLs.count != 0 && likePreviewURLs.count != 0 {
                 
-                let musicDataModel = MusicDataModel(artistName: artistNameArray[indexNumber], musicName: musicNameArray[indexNumber], previewURL: previewURLArray[indexNumber], imageString: imageStringArray[indexNumber], userID: userID, userName: userName)
+                let musicDataModel = MusicDataModel(artistName: artistNames[indexNumber], musicName: musicNames[indexNumber], previewURL: previewURLs[indexNumber], imageString: imageStrs[indexNumber], userID: userID, userName: userName)
                 
                 musicDataModel.save()
             }

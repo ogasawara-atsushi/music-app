@@ -10,7 +10,7 @@ import Foundation
 import Firebase
 import PKHUD
 
-class SaveProfile {
+class Profile {
     //サーバーに値を飛ばす
     var userID: String! = ""
     var userName: String! = ""
@@ -36,7 +36,7 @@ class SaveProfile {
         return ["userID":userID!,"userName":userName as Any]
     }
     
-    func saveProfile(){
+    func save(){
         ref.setValue(toContents())
         UserDefaults.standard.set(ref.key, forKey: "autoID")
     }

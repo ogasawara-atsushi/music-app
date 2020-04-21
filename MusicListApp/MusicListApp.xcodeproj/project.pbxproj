@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		720D6C682418CD5900435338 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D6C672418CD5900435338 /* LoginViewController.swift */; };
 		720D6C6A2418DA7A00435338 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D6C692418DA7A00435338 /* UIColorExtension.swift */; };
-		720D6C6C2418E09A00435338 /* SaveProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D6C6B2418E09A00435338 /* SaveProfile.swift */; };
+		720D6C6C2418E09A00435338 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D6C6B2418E09A00435338 /* Profile.swift */; };
 		720D6C6E2419FF0500435338 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D6C6D2419FF0500435338 /* SearchViewController.swift */; };
 		721AA767241A88E60070B467 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AA766241A88E60070B467 /* SelectViewController.swift */; };
 		72627C8E24164F2900460B4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72627C8D24164F2900460B4C /* GoogleService-Info.plist */; };
@@ -29,7 +29,7 @@
 		5522E7221AE3E59B5B55BB77 /* Pods-MusicListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicListApp.release.xcconfig"; path = "Target Support Files/Pods-MusicListApp/Pods-MusicListApp.release.xcconfig"; sourceTree = "<group>"; };
 		720D6C672418CD5900435338 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		720D6C692418DA7A00435338 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		720D6C6B2418E09A00435338 /* SaveProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveProfile.swift; sourceTree = "<group>"; };
+		720D6C6B2418E09A00435338 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		720D6C6D2419FF0500435338 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		721AA766241A88E60070B467 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		72627C8D24164F2900460B4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		720D6C652418CD1600435338 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				720D6C6B2418E09A00435338 /* SaveProfile.swift */,
+				720D6C6B2418E09A00435338 /* Profile.swift */,
 				728F85B3241B8FC000896413 /* MusicDataModel.swift */,
 			);
 			path = Model;
@@ -272,7 +272,7 @@
 				721AA767241A88E60070B467 /* SelectViewController.swift in Sources */,
 				72F18416241641660025F750 /* SceneDelegate.swift in Sources */,
 				720D6C6A2418DA7A00435338 /* UIColorExtension.swift in Sources */,
-				720D6C6C2418E09A00435338 /* SaveProfile.swift in Sources */,
+				720D6C6C2418E09A00435338 /* Profile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

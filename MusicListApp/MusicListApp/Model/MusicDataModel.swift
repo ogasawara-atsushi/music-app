@@ -50,7 +50,12 @@ class MusicDataModel {
     }
     
     func toContents() -> [String:Any] {
-        return ["artistName":artistName!, "musicName":musicName!, "previewURL":previewURL!, "imageString":imageString!, "userID":userID!, "userName":userName!]
+        return ["artistName": artistName!,
+                "musicName": musicName!,
+                "previewURL": previewURL!,
+                "imageString": imageString!,
+                "userID": userID!,
+                "userName": userName!]
     }
     
     func save() {
